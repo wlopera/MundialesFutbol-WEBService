@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ClienteCMFServicioService" targetNamespace="http://cliente.wlopera.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://cliente.wlopera.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://cliente.wlopera.com/" schemaLocation="clientecmfservicio_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="getCMFPorAnnioResponse">
+    <wsdl:part name="parameters" element="tns:getCMFPorAnnioResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaCMFTodos">
+    <wsdl:part name="parameters" element="tns:getListaCMFTodos">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaCMFTodosResponse">
+    <wsdl:part name="parameters" element="tns:getListaCMFTodosResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaCMFPorCampeonatoGanadoResponse">
+    <wsdl:part name="parameters" element="tns:getListaCMFPorCampeonatoGanadoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCMFPorAnnio">
+    <wsdl:part name="parameters" element="tns:getCMFPorAnnio">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaCMFPorCampeonatoGanado">
+    <wsdl:part name="parameters" element="tns:getListaCMFPorCampeonatoGanado">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ClienteCMFServicio">
+    <wsdl:operation name="getCMFPorAnnio">
+      <wsdl:input name="getCMFPorAnnio" message="tns:getCMFPorAnnio">
+    </wsdl:input>
+      <wsdl:output name="getCMFPorAnnioResponse" message="tns:getCMFPorAnnioResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListaCMFTodos">
+      <wsdl:input name="getListaCMFTodos" message="tns:getListaCMFTodos">
+    </wsdl:input>
+      <wsdl:output name="getListaCMFTodosResponse" message="tns:getListaCMFTodosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListaCMFPorCampeonatoGanado">
+      <wsdl:input name="getListaCMFPorCampeonatoGanado" message="tns:getListaCMFPorCampeonatoGanado">
+    </wsdl:input>
+      <wsdl:output name="getListaCMFPorCampeonatoGanadoResponse" message="tns:getListaCMFPorCampeonatoGanadoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ClienteCMFServicioServiceSoapBinding" type="tns:ClienteCMFServicio">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getCMFPorAnnio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCMFPorAnnio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCMFPorAnnioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListaCMFTodos">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListaCMFTodos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListaCMFTodosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListaCMFPorCampeonatoGanado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListaCMFPorCampeonatoGanado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListaCMFPorCampeonatoGanadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClienteCMFServicioService">
+    <wsdl:port name="ClienteCMFServicioPort" binding="tns:ClienteCMFServicioServiceSoapBinding">
+      <soap:address location="http://localhost:8080/MundialesFutbol/services/ClienteCMFServicioPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

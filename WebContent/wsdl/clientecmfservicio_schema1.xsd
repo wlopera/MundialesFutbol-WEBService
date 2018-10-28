@@ -1,0 +1,59 @@
+<xs:schema xmlns:tns="http://cliente.wlopera.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://cliente.wlopera.com/" version="1.0">
+
+  <xs:element name="getCMFPorAnnio" type="tns:getCMFPorAnnio"/>
+
+  <xs:element name="getCMFPorAnnioResponse" type="tns:getCMFPorAnnioResponse"/>
+
+  <xs:element name="getListaCMFPorCampeonatoGanado" type="tns:getListaCMFPorCampeonatoGanado"/>
+
+  <xs:element name="getListaCMFPorCampeonatoGanadoResponse" type="tns:getListaCMFPorCampeonatoGanadoResponse"/>
+
+  <xs:element name="getListaCMFTodos" type="tns:getListaCMFTodos"/>
+
+  <xs:element name="getListaCMFTodosResponse" type="tns:getListaCMFTodosResponse"/>
+
+  <xs:complexType name="getCMFPorAnnio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCMFPorAnnioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:campeonato"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="campeonato">
+    <xs:sequence>
+      <xs:element name="annio" type="xs:int"/>
+      <xs:element minOccurs="0" name="nombreCampeon" type="xs:string"/>
+      <xs:element minOccurs="0" name="nombreSede" type="xs:string"/>
+      <xs:element minOccurs="0" name="nonbreSubcampeon" type="xs:string"/>
+      <xs:element minOccurs="0" name="resultado" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getListaCMFTodos">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getListaCMFTodosResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:campeonato"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getListaCMFPorCampeonatoGanado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getListaCMFPorCampeonatoGanadoResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:campeonato"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
