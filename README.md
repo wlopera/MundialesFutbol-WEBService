@@ -531,8 +531,9 @@ Crear un nuevo proyecto Soap
 
 A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
 
-**2. Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL**
+**2. Si se presentan errores al compilar o publicar Java con la versi+on 1.8**
 
+![erro-2](https://user-images.githubusercontent.com/7141537/48015709-c4513380-e0f7-11e8-88ce-f3fca522ae7e.png)
 
-
+![erro-3](https://user-images.githubusercontent.com/7141537/48015710-c4513380-e0f7-11e8-8401-81e64c53de3a.png)
 
