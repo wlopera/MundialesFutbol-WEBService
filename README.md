@@ -139,6 +139,7 @@ public class Campeonato implements Serializable {
 ***
 
 **2. Definir Clase - Simular manejo de datos**
+
 Clase que permite simular el manejo de los datos - DUMMY - 
 Para un caso mas real se puede obtener de una Base de datos.
 
@@ -288,6 +289,7 @@ public class DataCampeonatos {
 ***
 
 **3. Crear interface**
+
 Definir las 'operaciones o servicios' requeridos por el Servicio Web
 
 ***
@@ -338,6 +340,7 @@ public interface ClienteCMFApi {
 ***
 
 **4. Implementar la interface**
+
 Implementar las 'operaciones' requeridas por el Servicio Web 
 
 ***
