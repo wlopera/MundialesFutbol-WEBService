@@ -42,10 +42,10 @@ Salida:
 * Equipo Sub - Campeón
 
 ## Requerimientos.
-* Java 1.8
-* STS - Eclipse
+* Java 1.8 [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html]
+* STS - Eclipse [https://spring.io/tools3/sts/all]
 * Pivotal tc Server Developer Edition v4.0
-* SoapUI (opcional)
+* SoapUI (opcional) [https://www.soapui.org/downloads/soapui.html]
 
 ## Crear de un proyecto web dinámico
 > Nuevo Proyecto WEB - MundialesFutbol (eclipse), a desplegar en un servidor de Tomcat
@@ -54,7 +54,7 @@ Salida:
 
 ## Implementar códigos
 
-**1. Modelo de datos**
+**1. Entidad**
 
 Clase que permite definir el modelo de datos; requeridos por el Servicio Web.
 
@@ -138,7 +138,7 @@ public class Campeonato implements Serializable {
 ```
 ***
 
-**2. Manejo de datos**
+**2. Datos**
 
 Clase que permite simular el manejo de los datos - DUMMY - 
 Para un caso mas real se puede obtener de una Base de datos.
@@ -457,7 +457,8 @@ Generar el Servicio Web.
 
 **1. Instalar y configurar apache-cxf**
 
-* Instalar localmente Apache CXF --> D:\programs\apache-cxf-3.2.6
+* Instalar localmente Apache CXF --> D:\programs\apache-cxf-3.2.6 [http://archive.apache.org/dist/cxf/3.2.6/]
+
 * Configurar Apache CXF en las preferencias de eclipse 
 
 ![config-1](https://user-images.githubusercontent.com/7141537/48011600-1f7e2880-e0ee-11e8-9f58-19e6f8addfaa.png)
@@ -490,17 +491,6 @@ Generar el Servicio Web.
 
 ![wsdl-2](https://user-images.githubusercontent.com/7141537/48013796-22c7e300-e0f3-11e8-9467-031b966cfb25.png)
 
-**NOTA**
-
-Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL
-
-***
-```
-<import resource = "classpath: META-INF / cxf / cxf-extension-soap.xml" />
-```
-***
-
-A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
 
 ## Probar Servicio Web
 
@@ -529,7 +519,19 @@ Crear un nuevo proyecto Soap
 ![soa-1](https://user-images.githubusercontent.com/7141537/48014722-560b7180-e0f5-11e8-8a6f-524414feca0d.png)
 
 
+**NOTAS**
 
+**1. Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL**
+
+***
+```
+<import resource = "classpath: META-INF / cxf / cxf-extension-soap.xml" />
+```
+***
+
+A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
+
+**2. Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL**
 
 
 
