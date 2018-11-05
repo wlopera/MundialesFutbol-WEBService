@@ -480,6 +480,9 @@ Seleccione la clase que implementa los servicios; click botón derecho del mouse
 
 ![web service-1](https://user-images.githubusercontent.com/7141537/48012218-83552100-e0ef-11e8-8e27-40a2c24da236.png)
 
+* Genera archivos WSDL y esquemas requeridos por el Servicio Web (Operaciones - Servicios)
+
+![web service-2](https://user-images.githubusercontent.com/7141537/48012504-26a63600-e0f0-11e8-8f3d-efdb824a7642.png)
 
 
 
