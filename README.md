@@ -503,22 +503,29 @@ Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en C
 A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
 
 ## Probar Servicio Web
+
 Levantar el servidor
+
 ![salida-1](https://user-images.githubusercontent.com/7141537/48014372-83a3eb00-e0f4-11e8-9020-04c3893c8cb9.png)
 
 **1. Conexión**
-![wsdl-sal-a](https://user-images.githubusercontent.com/7141537/48014216-2f990680-e0f4-11e8-8fa1-de93c949ca58.png)
+
 ![wsdl-sal](https://user-images.githubusercontent.com/7141537/48014218-30319d00-e0f4-11e8-8c6c-a6b4f41cf3e6.png)
 
+![wsdl-sal-a](https://user-images.githubusercontent.com/7141537/48014216-2f990680-e0f4-11e8-8fa1-de93c949ca58.png)
+
 **2. SoapUI**
+
 Crear un nuevo proyecto Soap
 
 ![soa-1](https://user-images.githubusercontent.com/7141537/48014575-f6ad6180-e0f4-11e8-9a86-8e6e9bc9d93d.png)
 
-* Todos los campeonatos
+* Prueba: Todos los campeonatos
+
 ![soa-1](https://user-images.githubusercontent.com/7141537/48014670-34aa8580-e0f5-11e8-90b8-317bb5d3996a.png)
 
-* Equipos ganadores de dos campeonatos
+* Prueba: Equipos ganadores de dos campeonatos
+
 ![soa-1](https://user-images.githubusercontent.com/7141537/48014722-560b7180-e0f5-11e8-8a6f-524414feca0d.png)
 
 
