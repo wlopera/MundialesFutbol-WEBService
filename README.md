@@ -533,7 +533,11 @@ A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma au
 
 **2. Si se presentan errores al compilar o publicar Java con la versi+on 1.8**
 
+Validar '''Preferencias''' de eclipse
+
 ![erro-2](https://user-images.githubusercontent.com/7141537/48015709-c4513380-e0f7-11e8-88ce-f3fca522ae7e.png)
+
+Validar '''Propiedades''' del proyecto
 
 ![erro-3](https://user-images.githubusercontent.com/7141537/48015710-c4513380-e0f7-11e8-8401-81e64c53de3a.png)
 
