@@ -494,12 +494,13 @@ Generar el Servicio Web.
 
 Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL
 
-* <import resource = "classpath: META-INF / cxf / cxf-extension-soap.xml" />
+***
+```
+<import resource = "classpath: META-INF / cxf / cxf-extension-soap.xml" />
+```
+***
 
 A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
 
-***
-```
 
-```
-***
+
