@@ -464,10 +464,16 @@ Generar el Servicio Web.
 
 **2. Uso de Wizard de eclipse: Crear nuevo Servicio Web - XML**
 
-Seleccione la clase que implementa los servicios; click botón derecho del mouse y seleccionar wizard para generar el Servicio Web.
+*Seleccione la clase que implementa los servicios.
+
+* Click botón derecho del mouse y seleccionar generar el Servicio Web.
+
+* Seguir wizard hasta abrir el Servidor
 
 ![wsdl](https://user-images.githubusercontent.com/7141537/48011113-00cb6200-e0ed-11e8-8c83-47ce4d18a33d.png)
-
+![web service-a](https://user-images.githubusercontent.com/7141537/48013438-4fc7c600-e0f2-11e8-8eac-ffbc44157521.png)
+![web service-b](https://user-images.githubusercontent.com/7141537/48013444-50f8f300-e0f2-11e8-8da1-9282b514886c.png)
+![web service-c](https://user-images.githubusercontent.com/7141537/48013446-522a2000-e0f2-11e8-88ae-88bf723df4ae.png)
 
 @WebService(targetNamespace = "http://cliente.wlopera.com/", portName = "ClienteCMFServicioPort", serviceName = "ClienteCMFServicioService")
 
@@ -482,10 +488,15 @@ Seleccione la clase que implementa los servicios; click botón derecho del mouse
 
 * Genera archivos WSDL y esquemas requeridos por el Servicio Web (Operaciones - Servicios)
 
-![web service-2](https://user-images.githubusercontent.com/7141537/48012504-26a63600-e0f0-11e8-8f3d-efdb824a7642.png)
+![wsdl-2](https://user-images.githubusercontent.com/7141537/48013796-22c7e300-e0f3-11e8-9467-031b966cfb25.png)
 
+**NOTA**
 
+Al arrancar 'deploy' del Servicio puede ocurrir un Error de implementación en CXF 3.0.3 en el servicio generado desde WSDL
 
+* <import resource = "classpath: META-INF / cxf / cxf-extension-soap.xml" />
+
+A partir de CXF 2.4.0, las extensiones se cargan internamente en CXF de forma automática y no es necesario importar todo el archivo cxf-extension - *. Xml. Solo necesita importar classpath: META-INF / cxf / cxf.xml.
 
 ***
 ```
