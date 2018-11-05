@@ -363,7 +363,6 @@ import com.wlopera.cliente.domain.Campeonato;
  * @author wlopera
  *
  */
-@WebService(targetNamespace = "http://cliente.wlopera.com/", portName = "ClienteCMFServicioPort", serviceName = "ClienteCMFServicioService")
 public class ClienteCMFServicio implements ClienteCMFApi {
 
 	// http://localhost:8080/CampeonatosMundialesFutbol/services/ClienteCMFApi?wsdl
@@ -457,19 +456,33 @@ public class ClienteCMFServicio implements ClienteCMFApi {
 Generar el Servicio Web.
 
 **1. Instalar y configurar apache-cxf**
+
 * Instalar localmente Apache CXF --> D:\programs\apache-cxf-3.2.6
 * Configurar Apache CXF en las preferencias de eclipse 
 
 ![config-1](https://user-images.githubusercontent.com/7141537/48011600-1f7e2880-e0ee-11e8-9f58-19e6f8addfaa.png)
 
 **2. Uso de Wizard de eclipse: Crear nuevo Servicio Web - XML**
+
 Seleccione la clase que implementa los servicios; click botón derecho del mouse y seleccionar wizard para generar el Servicio Web.
 
 ![wsdl](https://user-images.githubusercontent.com/7141537/48011113-00cb6200-e0ed-11e8-8c83-47ce4d18a33d.png)
 
 
-**1. Definir Interface**
-Definir los servicios a requeridos por el negocio
+@WebService(targetNamespace = "http://cliente.wlopera.com/", portName = "ClienteCMFServicioPort", serviceName = "ClienteCMFServicioService")
+
+**3. El wizard genera el codigo necesario requerido por el servicio web**
+
+* Genera las clases requeridas por el Servicio Web
+* Modifica la clase implementada convirtiendola en Servicio
+
+-> @WebService(targetNamespace = "http://cliente.wlopera.com/", portName = "ClienteCMFServicioPort", serviceName = "ClienteCMFServicioService")
+
+![web service-1](https://user-images.githubusercontent.com/7141537/48012218-83552100-e0ef-11e8-8e27-40a2c24da236.png)
+
+
+
+
 
 ***
 ```
