@@ -6,6 +6,7 @@ Uso de CXF - STS - Eclipse
 
 Uso de la interface 'ClientWSCApi', que permite simular la consulta al 'core de la compañia' para responder peticiones.
 
+@wlopera/William Lopera - Nov 2018
 
 ### Campeones mundiales
 Listado de paises campeones de mundiales:
